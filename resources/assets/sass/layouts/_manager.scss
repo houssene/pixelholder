@@ -1,0 +1,51 @@
+.manager{
+  
+  .navbar-default{
+    background-color: #212121;
+    border-color: #212121;
+    border-radius: 0px;
+    height: 60px;
+    line-height: 60px;
+
+    .navbar-brand{
+      color: #ff8606;
+      text-transform: uppercase;
+
+      img{
+        width: 120px;
+        height: auto;
+      }
+    }
+
+    .navbar-nav{
+      height: 60px;
+      li{
+        height: 100%;
+
+        a{
+          padding-top: 0px;
+          padding-bottom: 0px;
+          line-height: 60px;
+          color: #d9d5d2;
+          transition-duration: 300ms;
+
+          &:hover{
+            color: #ffaa00;
+          }
+        }
+      }
+    }
+  }
+
+  .panel-default{
+    border-color: #212121;
+    
+    .panel-heading{
+      border-color: #212121;
+      background-color: #212121;
+      color: #d9d5d2;
+      text-transform: uppercase;
+    }
+  }
+
+}

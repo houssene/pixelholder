@@ -1,0 +1,47 @@
+#grid{
+  width: 100%;
+  margin: 0 auto;
+
+  .grid-item{
+    margin: 10px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 300ms;
+
+    &:hover{
+      .overlay{
+        visibility: visible;
+        background-color: #938f90;
+
+        span{
+          opacity: 1;
+        }
+      }
+    }
+
+    .overlay{
+      position: absolute;
+      left: 0;  right: 0;
+      top: 0;  bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      transition-duration: 600ms;
+      background-color: transparent;
+
+      span{
+        display: inline-block;
+        color: #212121;
+        text-transform: uppercase;
+        font-size: 24px;
+        border-radius: 4px;
+        font-family: 'Oswald', sans-serif;
+        transition-duration: 900ms;
+        opacity: 0;
+      }
+    }
+  }
+}
+
